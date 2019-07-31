@@ -1,1 +1,1 @@
-web: gunicorn blog.wsgi --log-file=-
+web: gunicorn wordcount_2.wsgi --log-file=-
