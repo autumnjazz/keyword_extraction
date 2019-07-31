@@ -10,8 +10,8 @@ def about(request):
 	return render(request, 'mykeyword/about.html')
 def count(request):
     full_text = request.GET['fulltext']
-    if full_test == 'test':
-        full_test = """
+    if full_text == 'test':
+        full_text = """
             Story highlights Don't be fooled by the word "energy"
 
             Some energy bars contain as much saturated fat as a Snickers bar
@@ -27,7 +27,6 @@ def count(request):
             You can afford more calories if bars are consumed in place of meals and not as snacks. But if a bar is intended only to tide you over until dinner, limit it to 150 to 200 calories.
 
             In general, try to aim for bars with less than 3 grams of saturated fat and at least 4 grams of fiber. Palm kernel oil in yogurt and chocolate coatings will boost saturated fat. Also watch out for bars with ingredients such as brown rice syrup or cane invert syrup listed first, as they are generally higher in sugars than others and are better suited for athletes, not weight watchers.
-
         """
     top_words = top3_words(full_text)
 

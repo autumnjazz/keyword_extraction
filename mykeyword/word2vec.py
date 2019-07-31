@@ -4,7 +4,7 @@ from sklearn.manifold import TSNE
 from .data_preprocessing import get_data, create_wordlist
 
 def top3_words(text_string):
-    
+        
     word_by_sent = create_wordlist(text_string)
 
     my_model = Word2Vec(sentences=word_by_sent, size=10, window=4, min_count=1, workers=4, sg=0) #min_count 설정 문제
