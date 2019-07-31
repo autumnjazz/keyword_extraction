@@ -12,8 +12,6 @@ def get_data(path=None):
     if path != None:
         document_text = open(path, 'r')
         text_string = document_text.read()
-    else:
-        text_string = nltk.corpus.gutenberg.raw("carroll-alice.txt")[:3000]
     return text_string
 
 
